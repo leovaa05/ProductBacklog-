@@ -1,4 +1,4 @@
-# Product Backlog de 10 Issues reais
+# Product Backlog
 ## Descrição
 Atividade desenvolvida para a matéria de Métodos Ageis do Curso de BSI no IFNMG-Campus Salinas
 ## Grupo:
