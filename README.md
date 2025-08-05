@@ -12,3 +12,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 5 - Testar em Diferentes Navegadores (X)
 - TASK 6 - Implementar Validação Avançada de Inputs (X)
 - TASK 7 - Estilizar Layout Principal com Flexbox (X)
+- TASK 8 - Estilizar Inputs e Labels (X)
