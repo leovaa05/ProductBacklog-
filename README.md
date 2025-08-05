@@ -13,3 +13,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 6 - Implementar Validação Avançada de Inputs (X)
 - TASK 7 - Estilizar Layout Principal com Flexbox (X)
 - TASK 8 - Estilizar Inputs e Labels (X)
+- TASK 9 - Estilizar o Botão "Calcular IMC" (X)
