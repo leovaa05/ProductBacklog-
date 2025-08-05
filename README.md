@@ -8,3 +8,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 1 - Criar Estrutura Básica da Interface (X)
 - TASK 2 - Implementar Lógica de Cálculo do IMC (x)
 - TASK 3 - Implementar Classificação por Faixa (X)
+- TASK 4 - Adicionar Feedback Visual e Limpeza (X)
