@@ -8,25 +8,56 @@ const mensagemErro = document.getElementById('erro');
 
 botaoCalcular.addEventListener('click', calcularIMC);
 botaoLimpar.addEventListener('click', limparCampos);
+inputPeso.addEventListener('input', validarCampos);
+inputAltura.addEventListener('input', validarCampos);
+
+function validarCampos() {
+    const peso = parseFloat(inputPeso.value);
+    const altura = parseFloat(inputAltura.value);
+
+    if (!peso || peso <= 0) {
+        mensagemErro.textContent = "Peso deve ser maior que zero.";
+        mensagemErro.style.display = "block";
+        botaoCalcular.disabled = true;
+        return;
+    }
+
+    if (!altura || altura <= 0) {
+        mensagemErro.textContent = "Altura deve ser maior que zero.";
+        mensagemErro.style.display = "block";
+        botaoCalcular.disabled = true;
+        return;
+    }
+
+    mensagemErro.style.display = "none";
+    botaoCalcular.disabled = false;
+}
 
 function calcularIMC() {
     const peso = parseFloat(inputPeso.value);
     const altura = parseFloat(inputAltura.value);
 
-    if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
-        mensagemErro.textContent = "Por favor, preencha o peso e a altura com números positivos.";
+    if (!peso || peso <= 0) {
+        mensagemErro.textContent = "Peso inválido. Digite um número maior que zero.";
         mensagemErro.style.display = "block";
         pResultado.textContent = "Seu IMC aparecerá aqui";
         pClassificacao.textContent = "";
         return;
     }
 
-    mensagemErro.style.display = "none";
+    if (!altura || altura <= 0) {
+        mensagemErro.textContent = "Altura inválida. Digite um número maior que zero.";
+        mensagemErro.style.display = "block";
+        pResultado.textContent = "Seu IMC aparecerá aqui";
+        pClassificacao.textContent = "";
+        return;
+    }
 
     const imc = peso / (altura * altura);
     const imcFormatado = imc.toFixed(2);
     const classificacao = classificarIMC(imc);
 
+    mensagemErro.style.display = "none";
     pResultado.textContent = `Seu IMC é ${imcFormatado}.`;
     pClassificacao.textContent = classificacao;
 }
@@ -34,13 +65,13 @@ function calcularIMC() {
 function classificarIMC(valor) {
     if (valor < 18.5) {
         return "Você está com magreza.";
-    } else if (valor >= 18.5 && valor < 25) {
+    } else if (valor < 25) {
         return "Você está com peso normal.";
-    } else if (valor >= 25 && valor < 30) {
+    } else if (valor < 30) {
         return "Você está com sobrepeso.";
-    } else if (valor >= 30 && valor < 35) {
+    } else if (valor < 35) {
         return "Você está com obesidade grau I.";
-    } else if (valor >= 35 && valor < 40) {
+    } else if (valor < 40) {
         return "Você está com obesidade grau II.";
     } else {
         return "Você está com obesidade grau III (mórbida).";
@@ -53,4 +84,5 @@ function limparCampos() {
     pResultado.textContent = "Seu IMC aparecerá aqui";
     pClassificacao.textContent = "";
     mensagemErro.style.display = "none";
+    botaoCalcular.disabled = true;
 }

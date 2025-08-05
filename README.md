@@ -9,3 +9,5 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 2 - Implementar Lógica de Cálculo do IMC (x)
 - TASK 3 - Implementar Classificação por Faixa (X)
 - TASK 4 - Adicionar Feedback Visual e Limpeza (X)
+- TASK 5 - Testar em Diferentes Navegadores (X)
+- TASK 6 - Implementar Validação Avançada de Inputs (X)
