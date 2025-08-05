@@ -88,3 +88,49 @@ button#calcular:hover {
 .obesidade3 {
     color: #721c24;
 }
+
+.faixas-imc {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.faixas-imc h2 {
+  margin-bottom: 0.75rem;
+}
+
+.faixas-imc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faixas-imc li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 6px solid transparent;
+}
+
+.faixas-imc li.magreza {
+  border-color: #007bff;
+}
+
+.faixas-imc li.normal {
+  border-color: #28a745;
+}
+
+.faixas-imc li.sobrepeso {
+  border-color: #ffc107;
+}
+
+.faixas-imc li.obesidade1 {
+  border-color: #fd7e14;
+}
+
+.faixas-imc li.obesidade2 {
+  border-color: #dc3545;
+}
+
+.faixas-imc li.obesidade3 {
+  border-color: #721c24;
+}

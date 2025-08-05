@@ -15,3 +15,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 8 - Estilizar Inputs e Labels (X)
 - TASK 9 - Estilizar o Botão "Calcular IMC" (X)
 - TASK 10 - Exibir Resultado de Forma Clara (X)
+- TASK 11 - Adicionar Legenda com Categorias (X)
