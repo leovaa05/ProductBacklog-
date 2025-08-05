@@ -5,6 +5,7 @@ const inputAltura = document.getElementById('altura');
 const pResultado = document.getElementById('imc');
 const pClassificacao = document.getElementById('classificacao');
 const mensagemErro = document.getElementById('erro');
+const resultadoDiv = document.querySelector('.resultado');
 
 botaoCalcular.addEventListener('click', calcularIMC);
 botaoLimpar.addEventListener('click', limparCampos);
@@ -42,6 +43,7 @@ function calcularIMC() {
         mensagemErro.style.display = "block";
         pResultado.textContent = "Seu IMC aparecerá aqui";
         pClassificacao.textContent = "";
+        resultadoDiv.className = "resultado";
         return;
     }
 
@@ -50,16 +52,19 @@ function calcularIMC() {
         mensagemErro.style.display = "block";
         pResultado.textContent = "Seu IMC aparecerá aqui";
         pClassificacao.textContent = "";
+        resultadoDiv.className = "resultado";
         return;
     }
 
     const imc = peso / (altura * altura);
     const imcFormatado = imc.toFixed(2);
     const classificacao = classificarIMC(imc);
+    const classe = classeIMC(imc);
 
     mensagemErro.style.display = "none";
     pResultado.textContent = `Seu IMC é ${imcFormatado}.`;
     pClassificacao.textContent = classificacao;
+    resultadoDiv.className = "resultado " + classe;
 }
 
 function classificarIMC(valor) {
@@ -78,6 +83,22 @@ function classificarIMC(valor) {
     }
 }
 
+function classeIMC(valor) {
+    if (valor < 18.5) {
+        return "magreza";
+    } else if (valor < 25) {
+        return "normal";
+    } else if (valor < 30) {
+        return "sobrepeso";
+    } else if (valor < 35) {
+        return "obesidade1";
+    } else if (valor < 40) {
+        return "obesidade2";
+    } else {
+        return "obesidade3";
+    }
+}
+
 function limparCampos() {
     inputPeso.value = "";
     inputAltura.value = "";
@@ -85,4 +106,5 @@ function limparCampos() {
     pClassificacao.textContent = "";
     mensagemErro.style.display = "none";
     botaoCalcular.disabled = true;
+    resultadoDiv.className = "resultado";
 }

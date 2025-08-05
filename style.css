@@ -49,3 +49,42 @@ button#calcular {
 button#calcular:hover {
     background-color: #0056b3;
 }
+
+.resultado {
+    min-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#imc,
+#classificacao {
+    margin: 0;
+}
+
+.magreza {
+    color: #007bff;
+}
+
+.normal {
+    color: #28a745;
+}
+
+.sobrepeso {
+    color: #ffc107;
+}
+
+.obesidade1 {
+    color: #fd7e14;
+}
+
+.obesidade2 {
+    color: #dc3545;
+}
+
+.obesidade3 {
+    color: #721c24;
+}
