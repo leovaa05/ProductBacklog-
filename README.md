@@ -11,3 +11,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 4 - Adicionar Feedback Visual e Limpeza (X)
 - TASK 5 - Testar em Diferentes Navegadores (X)
 - TASK 6 - Implementar Validação Avançada de Inputs (X)
+- TASK 7 - Estilizar Layout Principal com Flexbox (X)
