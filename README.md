@@ -20,3 +20,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 13 - Validar inputs na calculadora TMB (X)
 - TASK 14 - Implementar cálculo da TMB com fórmula de Mifflin-St Jeor (X)
 - TASK 15 - Criar botão “Limpar” que zera todos os campos e resultados (X)
+- TASK 16 - Estilizar layout principal da calculadora TMB com display flex (X)
