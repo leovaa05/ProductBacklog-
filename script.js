@@ -110,12 +110,23 @@ function limparCampos() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const btnCalcularTMB = document.getElementById('calcular-tmb');
-  const inputPesoTMB = document.getElementById('peso-tmb');
-  const inputAlturaTMB = document.getElementById('altura-tmb');
-  const inputIdadeTMB = document.getElementById('idade-tmb');
-  const selectSexoTMB = document.getElementById('sexo-tmb');
-  const resultadoTMB = document.getElementById('resultado-tmb');
+    const btnCalcularTMB = document.getElementById('calcular-tmb');
+    const inputPesoTMB = document.getElementById('peso-tmb');
+    const inputAlturaTMB = document.getElementById('altura-tmb');
+    const inputIdadeTMB = document.getElementById('idade-tmb');
+    const selectSexoTMB = document.getElementById('sexo-tmb');
+    const resultadoTMB = document.getElementById('resultado-tmb');
+    const btnLimparTMB = document.getElementById('limpar-tmb');
+
+    btnLimparTMB.addEventListener('click', () => {
+        inputPesoTMB.value = '';
+        inputAlturaTMB.value = '';
+        inputIdadeTMB.value = '';
+        selectSexoTMB.value = '';
+        resultadoTMB.textContent = 'Seu resultado aparecerá aqui';
+        btnCalcularTMB.disabled = true;
+    });
+
 
   function validarCamposTMB() {
     const peso = parseFloat(inputPesoTMB.value);

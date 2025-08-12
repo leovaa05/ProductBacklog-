@@ -19,3 +19,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 12 - Criar estrutura básica da interface TMB (X)
 - TASK 13 - Validar inputs na calculadora TMB (X)
 - TASK 14 - Implementar cálculo da TMB com fórmula de Mifflin-St Jeor (X)
+- TASK 15 - Criar botão “Limpar” que zera todos os campos e resultados (X)
