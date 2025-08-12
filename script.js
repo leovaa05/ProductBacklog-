@@ -119,3 +119,37 @@ const resultadoTMB = document.getElementById('resultado-tmb');
 btnCalcularTMB.addEventListener('click', () => {
   resultadoTMB.textContent = 'Seu resultado aparecerá aqui';
 });
+
+function validarCamposTMB() {
+  const peso = parseFloat(inputPesoTMB.value);
+  const altura = parseFloat(inputAlturaTMB.value);
+  const idade = parseInt(inputIdadeTMB.value);
+  const sexo = selectSexoTMB.value;
+
+  let mensagemErro = '';
+
+  if (!peso || peso <= 0) {
+    mensagemErro = 'Peso deve ser maior que zero.';
+  } else if (!altura || altura <= 0) {
+    mensagemErro = 'Altura deve ser maior que zero.';
+  } else if (!idade || idade <= 0) {
+    mensagemErro = 'Idade deve ser maior que zero.';
+  } else if (!sexo) {
+    mensagemErro = 'Selecione o sexo.';
+  }
+
+  if (mensagemErro) {
+    resultadoTMB.textContent = mensagemErro;
+    btnCalcularTMB.disabled = true;
+  } else {
+    resultadoTMB.textContent = 'Seu resultado aparecerá aqui';
+    btnCalcularTMB.disabled = false;
+  }
+}
+
+inputPesoTMB.addEventListener('input', validarCamposTMB);
+inputAlturaTMB.addEventListener('input', validarCamposTMB);
+inputIdadeTMB.addEventListener('input', validarCamposTMB);
+selectSexoTMB.addEventListener('change', validarCamposTMB);
+
+validarCamposTMB();
