@@ -45,6 +45,40 @@
         </div>
 
     </div>
+    
+    <div class="container tmb-container">
+        <h1>Calculadora de TMB</h1>
+
+        <div class="inputpeso-tmb">
+            <label for="peso-tmb">Peso (kg):</label>
+            <input type="number" id="peso-tmb" step="0.1" min="0" placeholder="Ex: 70">
+        </div>
+
+        <div class="inputaltura-tmb">
+            <label for="altura-tmb">Altura (cm):</label>
+            <input type="number" id="altura-tmb" step="0.1" min="0" placeholder="Ex: 175">
+        </div>
+
+        <div class="inputidade-tmb">
+            <label for="idade-tmb">Idade (anos):</label>
+            <input type="number" id="idade-tmb" min="0" placeholder="Ex: 30">
+        </div>
+
+        <div class="inputsexo-tmb">
+            <label for="sexo-tmb">Sexo:</label>
+            <select id="sexo-tmb">
+            <option value="" disabled selected>Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            </select>
+        </div>
+
+        <button id="calcular-tmb">Calcular TMB</button>
+
+        <div id="resultado-tmb" class="resultado-tmb">
+            <p>Seu resultado aparecerá aqui</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

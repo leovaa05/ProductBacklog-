@@ -108,3 +108,14 @@ function limparCampos() {
     botaoCalcular.disabled = true;
     resultadoDiv.className = "resultado";
 }
+
+const btnCalcularTMB = document.getElementById('calcular-tmb');
+const inputPesoTMB = document.getElementById('peso-tmb');
+const inputAlturaTMB = document.getElementById('altura-tmb');
+const inputIdadeTMB = document.getElementById('idade-tmb');
+const selectSexoTMB = document.getElementById('sexo-tmb');
+const resultadoTMB = document.getElementById('resultado-tmb');
+
+btnCalcularTMB.addEventListener('click', () => {
+  resultadoTMB.textContent = 'Seu resultado aparecerá aqui';
+});
