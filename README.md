@@ -18,3 +18,4 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 11 - Adicionar Legenda com Categorias (X)
 - TASK 12 - Criar estrutura básica da interface TMB (X)
 - TASK 13 - Validar inputs na calculadora TMB (X)
+- TASK 14 - Implementar cálculo da TMB com fórmula de Mifflin-St Jeor (X)
