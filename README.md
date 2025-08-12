@@ -16,6 +16,7 @@ Erick Douglas, Kayo Rodrigues, Leonardo Viana e Rharume Neres
 - TASK 9 - Estilizar o Botão "Calcular IMC" (X)
 - TASK 10 - Exibir Resultado de Forma Clara (X)
 - TASK 11 - Adicionar Legenda com Categorias (X)
+# 2. Make a TMB Calculator
 - TASK 12 - Criar estrutura básica da interface TMB (X)
 - TASK 13 - Validar inputs na calculadora TMB (X)
 - TASK 14 - Implementar cálculo da TMB com fórmula de Mifflin-St Jeor (X)
